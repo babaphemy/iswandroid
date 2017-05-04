@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="myeverlastinng.net.paygate.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtStatus" />
+
+    <Button
+        android:text="PAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="133dp"
+        android:id="@+id/btnPay" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editAmt"
+        android:layout_alignBottom="@+id/btnPay"
+        android:layout_alignStart="@+id/btnPay"
+        android:layout_marginBottom="55dp" />
+
+    <Button
+        android:text="Pay With Token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPay"
+        android:layout_alignStart="@+id/btnPay"
+        android:layout_marginTop="52dp"
+        android:id="@+id/btntoken"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/amt"
+        android:id="@+id/txtStored" />
+
+    <TextView
+        android:text="Amount:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/amt"
+        android:layout_above="@+id/editAmt"
+        android:layout_alignStart="@+id/editAmt" />
+
+    <TextView
+        android:text="Token: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btntoken"
+        android:layout_marginTop="69dp"
+        android:id="@+id/txttoken"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/txtStatus" />
+
+    <TextView
+        android:text="Expiry: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttoken"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/txtExpiry"
+        android:layout_toEndOf="@+id/txtStatus" />
+</RelativeLayout>

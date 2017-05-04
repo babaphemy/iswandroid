@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Paygate.iml" filepath="$PROJECT_DIR$/Paygate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deviceprint-release-2.2.0/deviceprint-release-2.2.0.iml" filepath="$PROJECT_DIR$/deviceprint-release-2.2.0/deviceprint-release-2.2.0.iml" />
+    </modules>
+  </component>
+</project>
